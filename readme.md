@@ -37,7 +37,7 @@ Interesting note for this project was learning to use RGBA to enable opacity shi
 1. Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
 ## Deployment
 
-Page is presently deployed on Github pages due to its static nature. Available at: 
+Page is presently deployed on Github pages due to its static nature. Available at: https://wade-roberts.github.io/FCC-Survey-Form/
 
 ## Testing
 When viewing the page through it's Github Pages Deployment, simply click the small icon in the top left, select **"Survey Form"** and run the tests to see them completed. 

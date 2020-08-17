@@ -1,0 +1,115 @@
+<!--
+  Wade Roberts
+  Github: github.com/Wade-Roberts
+-->
+<head>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+</head>
+
+<body>
+	<main id="main">
+		<div id="content-container" class="container">
+			<h1 id="title" class="main-title">Island Get-Away Package</h1>
+			<div class="wrapper">
+				<p id="description">
+					Tell Nook Inc. about your experience and why you'd like to come visit
+					us!
+				</p>
+				<div class="form-div">
+					<form id="survey-form">
+						<label for="name" id="name-label">Name:</label>
+						<input
+							type="text"
+							id="name"
+							placeholder="Enter your Name"
+							required
+							class="input-tb"
+						/>
+						<label for="email" id="email-label">Email:</label>
+						<input
+							type="email"
+							id="email"
+							placeholder="Enter your Email Address"
+							required
+							class="input-tb"
+						/>
+						<label for="number" id="number-label">Age:</label>
+						<input
+							type="number"
+							id="number"
+							min="1"
+							max="122"
+							placeholder="Enter your Age"
+							class="input-tb"
+						/><br />
+
+						<label for="dropdown">How long would you like to stay?</label><br />
+						<div>
+							<select id="dropdown">
+								<option value="half-day">Half a Day!</option>
+								<option value="whole-day">A Whole Day!</option>
+								<option value="a-while-longer">A While Longer!</option>
+								<option value="forever">Forever!</option> </select
+							><br />
+						</div>
+						<div>
+							<p>
+								Would you like to stay in a tent or house while you're with us?
+							</p>
+							<input type="radio" id="tent" name="tent||house" value="tent" />
+							<label for="tent">Tent</label><br />
+							<input type="radio" id="house" name="tent||house" value="house" />
+							<label for="house">House</label><br />
+						</div>
+						<div>
+							<p>Which of the following do you have experience with?</p>
+							<input
+								type="checkbox"
+								id="fishing"
+								name="fishing"
+								value="fishing"
+							/>
+							<label for="fishing">Fishing</label><br />
+							<input
+								type="checkbox"
+								id="catch-bugs"
+								name="catch-bugs"
+								value="catch-bugs"
+							/>
+							<label for="catch-bugs">Bug Catching</label><br />
+							<input
+								type="checkbox"
+								id="gardening"
+								name="gardening"
+								value="gardening"
+							/>
+							<label for="gardening">Gardening</label><br />
+							<input
+								type="checkbox"
+								id="decoration"
+								name="decoration"
+								value="decoration"
+							/>
+							<label for="decoration">Island Decoration</label><br /><br />
+						</div>
+						<div>
+							<textarea id="textarea">
+Do you have any comments or questions? Yes, yes.</textarea
+							><br />
+						</div>
+						<div>
+							<input type="submit" id="submit" value="Anchors up!" />
+						</div>
+					</form>
+				</div>
+				<!--/form-->
+			</div>
+			<!--/wrapper-->
+		</div>
+		<!--/container-->
+		<footer>
+			<script src="scripts/FCC-Tests.js"></script>
+		</footer>
+	</main>
+	<!--.body-->
+</body>

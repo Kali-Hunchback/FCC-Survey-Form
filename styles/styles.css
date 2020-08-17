@@ -1,0 +1,122 @@
+:root {
+	--dark-green: #145814;
+	--light-green: #24ae24;
+	--white: #fff;
+	font-size: 10px;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	color: var(--white);
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-image: url('../assets/green-bg.jpg');
+	background-repeat: no-repeat;
+}
+
+.wrapper {
+	width: 75%;
+	margin: 0 auto;
+	/*Use RGBA to enable opacity shift on background without effecting the children of the wrapper class element*/
+	background-color: rgba(144, 238, 144, 0.3);
+}
+
+.input-tb {
+	border-radius: 5px;
+	font-family: monospace;
+	padding: 0.3em;
+	margin: 0em auto 1em auto;
+	font-size: 1.3em;
+	width: 85%;
+}
+
+.input-tb:focus,
+#textarea:focus {
+	border-color: var(--dark-green);
+}
+
+#title {
+	font-size: 2em;
+}
+
+#description {
+	padding: 1em;
+	font-size: 1.8em;
+}
+
+#survey-form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	font-size: 1.4em;
+}
+
+#dropdown {
+	width: 50%;
+	text-align: center;
+	font-size: 1.2em;
+	font-family: monospace;
+	padding: 0.3em;
+	border-radius: 5px;
+}
+
+#textarea {
+	width: 85%;
+	height: 110%;
+	padding: 0.5em;
+	font-size: 1em;
+	border-radius: 5px;
+}
+
+#name-label,
+#email-label,
+#number-label {
+	margin-left: 7%;
+}
+
+#submit {
+	margin: 2em;
+	width: 25%;
+	font-size: 1.4em;
+	height: 80px;
+	border-radius: 12px;
+	padding: 1em;
+	background-color: var(--light-green);
+	border: 4px solid var(--dark-green);
+	color: var(--white);
+}
+
+label {
+	line-height: 1.7em;
+	text-align: left;
+	font-size: 1.4em;
+}
+
+p {
+	font-size: 1.4em;
+}
+
+label[for='dropdown'] {
+	text-align: center;
+}
+
+input[type='checkbox'],
+input[type='radio'],
+label[for='tent'],
+label[for='house'],
+label[for='fishing'],
+label[for='catch-bugs'],
+label[for='gardening'],
+label[for='decoration'] {
+	cursor: pointer;
+}
+
+@media (max-width: 710px) {
+	#submit {
+		width: 60%;
+		font-size: 1.1em;
+	}
+}
